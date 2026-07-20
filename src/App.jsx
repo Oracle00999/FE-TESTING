@@ -1,3 +1,5 @@
+import portiqShip from './assets/portiq-ship.png'
+
 const capabilities = [
   { label: 'Framework', value: 'React + Vite' },
   { label: 'Web server', value: 'Nginx' },
@@ -8,7 +10,7 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="/" aria-label="Portiq frontend check home">
-        <img src="/portiq-ship.png" alt="" />
+        <img src={portiqShip} alt="" />
         <span>Portiq</span>
       </a>
       <nav aria-label="Main navigation">
@@ -23,9 +25,9 @@ function HomePage() {
   return (
     <>
       <main className="hero">
-        <img className="hero-ship" src="/portiq-ship.png" alt="Portiq container ship mark" />
+        <img className="hero-ship" src={portiqShip} alt="Portiq container ship mark" />
         <div className="hero-content">
-          <p className="eyebrow"><span /> Frontend release 001</p>
+          <p className="eyebrow"><span /> Frontend release 002</p>
           <h1>Shipped from React.<br />Running on Portiq.</h1>
           <p className="hero-copy">
             A lightweight frontend built to cross the full deployment route from GitHub to a connected VPS.
@@ -35,7 +37,7 @@ function HomePage() {
             <a className="secondary-action" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a>
           </div>
         </div>
-        <p className="release-stamp">FE / 001</p>
+        <p className="release-stamp">FE / 002</p>
       </main>
 
       <section className="manifest" aria-labelledby="manifest-title">
