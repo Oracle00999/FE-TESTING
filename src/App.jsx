@@ -1,12 +1,14 @@
 import portiqShip from './assets/portiq-ship.png'
 
 const buildLabel = import.meta.env.VITE_RELEASE_LABEL ?? 'Not configured'
+const apiUrl = import.meta.env.VITE_API_URL ?? 'Not configured'
 
 const capabilities = [
   { label: 'Framework', value: 'React + Vite' },
   { label: 'Web server', value: 'Nginx' },
   { label: 'Delivery', value: 'Portiq VPS' },
   { label: 'Build variable', value: buildLabel },
+  { label: 'API target', value: apiUrl },
 ]
 
 function Header() {
@@ -30,7 +32,7 @@ function HomePage() {
       <main className="hero">
         <img className="hero-ship" src={portiqShip} alt="Portiq container ship mark" />
         <div className="hero-content">
-          <p className="eyebrow"><span /> Frontend release 002</p>
+          <p className="eyebrow"><span /> Frontend release 003</p>
           <h1>Shipped from React.<br />Running on Portiq.</h1>
           <p className="hero-copy">
             A lightweight frontend built to cross the full deployment route from GitHub to a connected VPS.
@@ -40,7 +42,7 @@ function HomePage() {
             <a className="secondary-action" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a>
           </div>
         </div>
-        <p className="release-stamp">FE / 002</p>
+        <p className="release-stamp">FE / 003</p>
       </main>
 
       <section className="manifest" aria-labelledby="manifest-title">
