@@ -1,9 +1,12 @@
 import portiqShip from './assets/portiq-ship.png'
 
+const buildLabel = import.meta.env.VITE_RELEASE_LABEL ?? 'Not configured'
+
 const capabilities = [
   { label: 'Framework', value: 'React + Vite' },
   { label: 'Web server', value: 'Nginx' },
   { label: 'Delivery', value: 'Portiq VPS' },
+  { label: 'Build variable', value: buildLabel },
 ]
 
 function Header() {
